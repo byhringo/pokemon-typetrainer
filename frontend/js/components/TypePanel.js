@@ -17,6 +17,7 @@ export default class TypePanel extends React.Component {
 					chosentype={this.props.type1ID}
 					beingset={this.props.selectingType == 1} />
 				<ResetButton 
+					canResetTypes={this.props.canResetTypes}
 					resetTypes={this.props.resetTypes}/>
 				<TypeAnswerPanel 
 					typeorder={2}

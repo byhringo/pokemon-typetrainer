@@ -96,3 +96,40 @@ body, body * {
     width: 30%;
   }
 }
+
+.mode1layout-wrapper .navigationpanel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.mode1layout-wrapper .navigationpanel-wrapper .validatebutton-wrapper {
+  font-size: 20px;
+  border-radius: 22px;
+  padding: 8px 4px;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.mode1layout-wrapper .navigationpanel-wrapper .pokemontypeinfotext-wrapper {
+  font-size: 20px;
+}
+
+.mode1layout-wrapper .navigationpanel-wrapper .nextbutton-wrapper {
+  visibility: hidden;
+  font-size: 20px;
+  border-radius: 22px;
+  padding: 8px 4px;
+  width: 200px;
+  background-color: #aaaaff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.mode1layout-wrapper .navigationpanel-wrapper .nextbutton-wrapper[data-visible="true"] {
+  visibility: visible;
+}

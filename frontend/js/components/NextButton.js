@@ -1,5 +1,12 @@
 import React from "react";
 
+var nextVariations = [
+						"Another Pokémon!",
+						"Continue",
+						"Next!",
+						"More Pokémon!",
+]
+
 export default class NextButton extends React.Component {
 
 	constructor(){
@@ -10,7 +17,11 @@ export default class NextButton extends React.Component {
 
 	render(){
 		return (
-			<div className="nextbutton-wrapper">
+			<div 	className="nextbutton-wrapper"
+					data-visible={this.props.visible}
+					onClick={this.props.nextTask}
+			>
+				{nextVariations[Math.floor(nextVariations.length * Math.random())]}
 			</div>
 		);
 	}

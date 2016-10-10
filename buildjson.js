@@ -11,6 +11,7 @@ var pokedex = [];
 
 var addToDex = function(result){
 	var name = result.forms[0].name;
+	name = name.charAt(0).toUpperCase() + name.slice(1);
 	var type1 = result.types[0].type.name;
 	var type2 = "none";
 
